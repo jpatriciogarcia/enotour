@@ -3,14 +3,9 @@
 <head>
 <title>Enotour® / Reservation Request for Services</title>
 <link rel="shortcut icon" href="http://www.enotourchile.com/Images/iso.ico">
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
-<link rel="stylesheet" type="text/css" href="calendar/calendar-blue.css">
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script language="javascript" src="prototype-1.6.0.3.js"></script>
-<script language="javascript" src="calendar/calendar_stripped.js"></script>
-<script language="javascript" src="calendar/calendar-en.js"></script>
-<script language="javascript" src="calendar/calendar-setup_stripped.js"></script>
+
 </head>
 
 <body bgcolor="#E8E9F1" link="#333333" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
@@ -22,7 +17,7 @@
 
   <tr>
     <td bgcolor="#FFFFFF">
-<form action="purchase_request.mail.php" method="post" enctype="application/x-www-form-urlencoded" name="form11" id="form11">
+<form action="reservation_request.mail.php" method="post" enctype="application/x-www-form-urlencoded" name="form11" id="form11">
         <table width="740" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong><br>
@@ -34,28 +29,26 @@
         </font>
         <table width="740" border="0" align="center" cellpadding="5" cellspacing="5" bordercolor="#000000">
           <tr>
-            <td width="32%" valign="top"><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Company</font></div></td>
+            <td width="32%" valign="top"><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Nombre empresa </font></div></td>
             <td width="68%"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-              <input name="company" type="text" id="company" size="50">
+              <input name="first_name" type="text" id="first_name" size="50">
             </font></td>
           </tr>
           <tr>
-            <td valign="top"><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Name</font></div></td>
+            <td valign="top"><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Nombre de contacto </font></div></td>
             <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-              <input name="name" type="text" id="name" size="50">
+              <input name="last_name" type="text" id="last_name" size="50">
             </font></td>
           </tr>
 
           <tr>
-            <td valign="top"><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Phone
-                Number</font></div></td>
+            <td valign="top"><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Teléfono</font></div></td>
             <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
               <input name="phone_number" type="text" id="telefono24" size="50">
             </font></td>
           </tr>
           <tr>
-            <td valign="top"><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Email
-                Address</font></div></td>
+            <td valign="top"><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Email</font></div></td>
 
             <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
               <input name="email" type="text" id="telefono23" size="50">
@@ -63,270 +56,161 @@
           </tr>
           <tr>
             <td colspan="2" valign="top"><p>&nbsp;</p>
-              <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-                <tr>
-                  <td colspan="3"><div align="center"></div></td>
-                </tr>
-                <tr >
-                  <td colspan="3"><table width="100%" border="0" cellspacing="5" cellpadding="5">
-                    <tr>
-                      <th colspan="3" valign="top"><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong><font color="#333333">Rooms Category </font></strong></font></div></th>
-                      <th colspan="4" valign="top"><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong><font color="#333333">N° of Room </font></strong></font></div></th>
-                    </tr>
-                    <tr valign="middle">
-                      <td colspan="3"><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                          <input name="rooms_single" type="checkbox" id="rooms_single" value="Hotel Casa Real de Vi&ntilde;a Santa Rita">
-                        Single</font></div></td>
-                      <td colspan="4"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                        <label>
-                        <div align="center">
-                            <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                            <input name="rooms_single_number" type="text" id="rooms_single_number">
-                            </font></div>                        </td>
-                    </tr>
-                    <tr valign="middle">
-                      <td colspan="3"><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                          <input name="rooms_twins" type="checkbox" id="rooms_twins" value="Casa Tarapac&aacute;">
-                        Twin</font></div></td>
-                      <td colspan="4"><div align="center">
-                          <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                          <input name="rooms_twin_number" type="text" id="rooms_twin_number">
-                          </font></div></td>
-                    </tr>
-                    <tr valign="middle">
-                      <td><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Arrival date </font></div></td>
-                      <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                        <input name="arrival" type="text" id="arrival" size="10">
-                      </font></td>
-                      <td><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Departure date </font></div></td>
-                      <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                        <input name="departure" type="text" id="departure" size="10">
-                      </font></td>
-                      <td><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">N° Nights </font></div></td>
-                      <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                        <input name="nights" type="text" id="nights" size="5">
-                      </font></td>
-                    </tr>
-
-                  </table>
-                    <p>&nbsp;</p>
-                    <div align="center">
-                      <table width="100%">
-                        <tr>
-                          <th><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong><font color="#333333">Requires air travel ? </font></strong></font> <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                          <label>
-                          <input type="radio" name="air_travel" value="yes" onChange="$('divairtravel').show()">
-Yes</label>
-                          <label>
-                          <input name="air_travel" type="radio" onChange="$('divairtravel').hide()" value="no" checked>
-No</label>
-                          </font> </th>
-                        </tr>
-                      </table>
-                    </div>
-					<div id="divairtravel" style="display:none;">
-                    <table width="100%" border="0" cellpadding="5" cellspacing="5" bgcolor="#FFFFFF">
-
-                      <tr valign="middle">
-                        <td colspan="2"><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">First name </font></div></td>
-                        <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                          <input name="air_travel_first_name" type="text" id="air_travel_first_name" size="50">
-                        </font></div></td>
-                      </tr>
-                      <tr valign="middle">
-                        <td colspan="2"><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Last Name </font></div></td>
-                        <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                          <input name="air_travel_last_name" type="text" id="air_travel_last_name" size="50">
-                        </font></div></td>
-                      </tr>
-                      <tr valign="middle">
-                        <td><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Arrival Date </font></div></td>
-                        <td>
-                          <input name="air_travel_arrival" type="text" id="air_travel_arrival" size="10"></td>
-                        <td><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Departure Date </font></div></td>
-                        <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                          <input name="air_travel_departure" type="text" id="air_travel_departure" size="10">
-                        </font></td>
-                      </tr>
-                      <tr valign="middle">
-                        <td colspan="2" valign="top"><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Comments</font></div></td>
-                        <td colspan="2"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                          <textarea name="air_travel_comments" cols="50" rows="5" id="air_travel_comments"></textarea>
-                        </font></td>
-                      </tr>
-                    </table>
-					</div>
-                    <p>&nbsp;</p>
-                    <table width="100%" cellpadding="5" cellspacing="5" bgcolor="#FFFFFF">
-
-                      <tr>
-                        <td valign="top"><div align="right"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Form
-                        of Payment</font></div></td>
-                        <td><font face="Verdana, Arial, Helvetica, sans-serif">
-                          <select name="payment" id="payment">
-                            <option value="credit_card">Credit Card</option>
-                            <option value="deposit_current_account">Deposit Current Account</option>
-                            <option value="check">Check</option>
-                          </select>
-                          <br>
-                          <font color="#333333" size="1">*This
-                        precedent is just for reference</font></font></td>
-                      </tr>
-                    </table></td>
-                </tr>
-              </table>
               <table width="100%" border="0" cellspacing="5" cellpadding="5">
                 <tr >
-                  <th colspan="2" valign="top"><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong><font color="#333333">Santiago Hotels </font></strong></font></div></th>
-                  <th colspan="2" valign="top"><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong><font color="#333333">Wine Related Hotels </font></strong></font></div></th>
+                  <th colspan="6" valign="top"><div align="center">                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong><font color="#333333">Please indicate the service of your interest: </font></strong></font></div>                    </th>
                 </tr>
                 <tr valign="middle">
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="santiago_hotels[]" type="checkbox" id="santiago_hotels[]" value="0">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Ritz Carlton</font></div></td>
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="wine_hotels[]" type="checkbox" id="wine_hotels[]" value="0">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Hotel Casa Real de Viña Santa Rita</font></div></td>
+                  <th colspan="2"><div align="center">                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">                    Etiquetas  personalizadas y Empaques.</font></div></th>
+                  <th colspan="2"><div align="center">                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">                    Accesorios  del Vino</font></div></th>
+                  <th colspan="2"><div align="center">                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">                    Culinarios</font></div></th>
                 </tr>
                 <tr valign="middle">
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="santiago_hotels[]" type="checkbox" id="santiago_hotels[]" value="1">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Grand Hyatt</font></div></td>
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="wine_hotels[]" type="checkbox" id="wine_hotels[]" value="1">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Casa Tarapacá</font></div></td>
+                  <td rowspan="2"><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="1">
+                  </font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Botella de Vino Premium Etiqueta  Personalizada</font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="2">
+                  </font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Mini decantador Riedel grabado, en estuche de madera  flexible con logo.</font></div></td>
+                  <td><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="3">
+                  </font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Pechera con bolsillo  clásico con o sin logotipo bordado.</font></div></td>
                 </tr>
                 <tr valign="middle">
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="santiago_hotels[]" type="checkbox" id="santiago_hotels[]" value="2">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Sheraton</font></div></td>
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="wine_hotels[]" type="checkbox" id="wine_hotels[]" value="2">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Casa de Huéspedes de Viña Mar</font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Empaque Corporativo  Cilíndrico con Abertura Frontal</font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td colspan="2"><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
                 </tr>
                 <tr valign="middle">
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="santiago_hotels[]" type="checkbox" id="santiago_hotels[]" value="3">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">San Cristóbal Tower</font></div></td>
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="wine_hotels[]" type="checkbox" id="wine_hotels[]" value="3">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Hotel Casa Porta</font></div></td>
+                  <td colspan="2"><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="4">
+                  </font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Descorchador de dos tiempos impreso, en tubito de  madera flexible con logo</font></div></td>
+                  <td><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="5">
+                  </font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Gorro Chef Género,  diferentes colores (blanco, negro, rojo, etc).</font></div></td>
                 </tr>
                 <tr valign="middle">
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="santiago_hotels[]" type="checkbox" id="santiago_hotels[]" value="4">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">InterContinental</font></div></td>
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="wine_hotels[]" type="checkbox" id="wine_hotels[]" value="4">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Hacienda los Lingues</font></div></td>
+                  <td rowspan="3"><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="6">
+                  </font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Botella de Vino Premium</font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
                 </tr>
                 <tr valign="middle">
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="santiago_hotels[]" type="checkbox" id="santiago_hotels[]" value="5">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Marriott</font></div></td>
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="wine_hotels[]" type="checkbox" id="wine_hotels[]" value="5">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Hotel Casa Silva</font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Etiqueta Personalizada</font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="7">
+                  </font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Copa Riedel Mágnum grabada, en tubo de madera flexible  con logo.</font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
                 </tr>
                 <tr valign="middle">
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="santiago_hotels[]" type="checkbox" id="santiago_hotels[]" value="6">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Plaza el Bosque Park &amp; Suite</font></div></td>
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="wine_hotels[]" type="checkbox" id="wine_hotels[]" value="6">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">La Playa Winery&amp; Hotel</font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Caja de Madera</font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
                 </tr>
                 <tr valign="middle">
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="santiago_hotels[]" type="checkbox" id="santiago_hotels[]" value="7">
-                    </font></div></td>
-                  <td>                      <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Atton, Las Condes</font></div></td>
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="wine_hotels[]" type="checkbox" id="wine_hotels[]" value="7">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Hotel Santa Cruz Plaza</font></div></td>
+                  <td colspan="2"><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
                 </tr>
                 <tr valign="middle">
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="santiago_hotels[]" type="checkbox" id="santiago_hotels[]" value="8">
-                    </font></div></td>
-                  <td>                      <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Atton, el Bosque</font></div></td>
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="wine_hotels[]" type="checkbox" id="wine_hotels[]" value="8">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Clos Apalta Winery &amp; Lodge</font></div></td>
+                  <td rowspan="3"><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="8">
+                  </font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Botella de Vino Premium</font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
                 </tr>
                 <tr valign="middle">
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="santiago_hotels[]" type="checkbox" id="santiago_hotels[]" value="9">
-                    </font></div></td>
-                  <td>                      <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Novotel</font></div></td>
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="wine_hotels[]" type="checkbox" id="wine_hotels[]" value="9">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Casona de VIA Wines</font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Etiqueta Personalizada</font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
                 </tr>
                 <tr valign="middle">
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="santiago_hotels[]" type="checkbox" id="santiago_hotels[]" value="10">
-                    </font></div></td>
-                  <td>                      <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Four Points</font></div></td>
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="wine_hotels[]" type="checkbox" id="wine_hotels[]" value="10">
-                    </font></div></td>
-                  <td>                    <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Casa de Huéspedes de Casa Donoso</font></div></td>
+                  <td><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Empaque cilíndrico metálico </font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td colspan="2"><div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
                 </tr>
                 <tr valign="middle">
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="santiago_hotels[]" type="checkbox" id="santiago_hotels[]" value="11">
-                    </font></div></td>
-                  <td>                      <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Torremayor</font></div></td>
-                  <td><div align="center">
-                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                    <input name="wine_hotels[]" type="checkbox" id="wine_hotels[]" value="11">
-                    </font></div></td>
-                  <td><div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Hotel Tabonkö de Viña  Gïllmore</font></div></td>
+                  <td colspan="2"><div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td colspan="2"><div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td colspan="2"><div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
                 </tr>
                 <tr valign="middle">
-                  <td colspan="2" valign="top"><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Comments</font></div></td>
-                  <td colspan="2"><textarea name="textarea" cols="50" rows="5"></textarea></td>
+                  <th colspan="4" width="50%"><p align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Uvaterapia</font></p></th>
+                  <th colspan="2"><p align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Publicaciones</font></p></th>
+                </tr>
+                <tr valign="middle">
+                  <td colspan="2" rowspan="4"><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"></font><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="9">
+                  </font></div></td>
+                  <td colspan="2" rowspan="4"><p align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Set  Uvaterapia:</font></p>
+                    
+                    <div align="left">
+                        <ul type="disc">
+                          <li><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">1 Shampoo 200 g.</font></li>
+                          <li><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">1 Acondicionador 200 g.</font></li>
+                          <li><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">1 Jabón cremoso 90 g.</font></li>
+                          <li><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">1 Gel de baño 200 g.</font></li>
+                          <li><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">1 Espuma de Baño 200 g.</font></li>
+                          <li><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">1 Emulsión Corporal Antioxidante 200 g</font></li>
+                        </ul>
+                  </div></td>
+                  <td><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"></font><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="10">
+                  </font></div></td>
+                  <td><p align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Guía Mujer y Vino 2008.</font></p></td>
+                </tr>
+                <tr valign="middle">
+                  <td><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="11">
+                  </font></div></td>
+                  <td><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Guía de Vinos de Chile 2008</font></td>
+                </tr>
+                <tr valign="middle">
+                  <td><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="12">
+                  </font></div></td>
+                  <td><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Guía Descorchados 2008</font></td>
+                </tr>
+                <tr valign="middle">
+                  <td><div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="13">
+                  </font></div></td>
+                  <td><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Guía Descorchados 2008 </font></td>
+                </tr>
+                <tr valign="middle">
+                  <td colspan="2"><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"></font><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                    <input name="service[]" type="checkbox" id="service[]" value="14">
+                  </font></div></td>
+                  <td colspan="2"><p align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Set  Uvaterapia:</font></p>
+                    
+                    <div align="left">
+                        <ul type="disc">
+                          <li><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">1 Shampoo</font></li>
+                          <li><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">1 Bálsamo </font></li>
+                        </ul>
+                  </div></td>
+                  <td><div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td><p align="left">&nbsp;</p></td>
+                </tr>
+                <tr valign="middle">
+                  <td colspan="2"><div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td colspan="2"><div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td><div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                  <td><div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                </tr>
+                <tr valign="middle">
+                  <td colspan="2" valign="top"><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Comentarios</font></div></td>
+                  <td colspan="4"><textarea name="comments" cols="50" rows="5" id="comments"></textarea></td>
                 </tr>
               </table></td>
           </tr>
@@ -337,11 +221,11 @@ No</label>
 
 <div align="right">
                 <font face="Verdana, Arial, Helvetica, sans-serif">
-                <input type="button" name="Submit" value="Send" onClick="$('form11').request({onComplete: function(t){ alert(t.responseText); }});">
+                <input type="button" name="Submit" value="Enviar" onClick="$('form11').request({onComplete: function(t){ alert(t.responseText); }});">
               </font></div></td>
             <td width="370">
               <font face="Verdana, Arial, Helvetica, sans-serif">
-              <input type="Reset" name="Submit2" value="Delete">
+              <input type="Reset" name="Submit2" value="Cancelar">
             </font></td>
           </tr>
         </table>
@@ -370,26 +254,6 @@ No</label>
       </font></p>      </td>
   </tr>
 </table>
-
-<script type="text/javascript">
-  Calendar.setup({
-      inputField  : "arrival",
-    });
-
-  Calendar.setup({
-      inputField  : "departure",
-    });
-
-  Calendar.setup({
-      inputField  : "air_travel_arrival",
-    });
-
-  Calendar.setup({
-      inputField  : "air_travel_departure",
-    });
-
-</script>
-
 
 </body>
 </html>
