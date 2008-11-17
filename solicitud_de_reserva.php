@@ -22,7 +22,7 @@
 
   <tr>
     <td bgcolor="#FFFFFF">
-<form action="reservation_request.mail.php" method="post" enctype="application/x-www-form-urlencoded" name="form11" id="form11">
+<form action="solicitud_de_reserva.mail.php" method="post" enctype="application/x-www-form-urlencoded" name="form11" id="form11">
         <table width="740" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong><br>
@@ -90,7 +90,7 @@
                     </tr>
                     <tr valign="middle">
                       <td colspan="3"><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                          <input name="rooms_twins" type="checkbox" id="rooms_twins" value="Casa Tarapac&aacute;">
+                          <input name="rooms_twins" type="checkbox" id="rooms_twins">
                           Doble                      </font></div></td>
                       <td colspan="4"><div align="center">
                           <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
@@ -121,7 +121,7 @@
                     <div align="center">
                       <table width="100%">
                         <tr>
-                          <th><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong><font color="#333333">&iquest;</font><font color="#333333">Su solicitud requiere de pasaje aéreo  ? </font></strong></font> <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                          <th><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong><font color="#333333">&iquest;</font><font color="#333333">Su solicitud requiere de pasaje a&eacute;reo  ? </font></strong></font> <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
                           <label>
                           <input type="radio" name="air_travel" value="yes" onChange="$('divairtravel').show()">
                           Si</label>

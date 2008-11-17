@@ -3,7 +3,7 @@
 <head>
 <title>Enotour® / Reservation Request for Services</title>
 <link rel="shortcut icon" href="http://www.enotourchile.com/Images/iso.ico">
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="stylesheet" type="text/css" href="calendar/calendar-blue.css">
 
@@ -83,7 +83,7 @@
                     </tr>
                     <tr valign="middle">
                       <td colspan="3"><div align="center"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">
-                          <input name="rooms_single" type="checkbox" id="rooms_single" value="Hotel Casa Real de Vi&ntilde;a Santa Rita">
+                          <input name="rooms_single" type="checkbox" id="rooms_single" value="rooms_single">
                         Single</font></div></td>
                       <td colspan="4"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
                         <label>
